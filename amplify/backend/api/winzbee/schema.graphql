@@ -1,0 +1,44 @@
+type User {
+  id: ID!
+  username: String!
+  password: String!
+  email: String
+  skills: [String]
+  nativePlace: String
+  academics: [String]
+  events: [String]
+  connectionlist: [String]
+  profile: String
+  status: String
+  latitude: Float
+  longitude: Float
+}
+
+type Connections {
+  id: ID!
+  user1: User!
+  user2: User!
+  createdAt: AWSDateTime!
+}
+
+type Chat {
+  id: ID!
+  fromUser: User!
+  toUser: User!
+  messages: String!
+  createdAt: AWSDateTime!
+}
+
+type Mutation {
+  createUser(username: String!, password: String!, skills: [String], nativePlace: String, academics: [String]): User
+  createConnection(user1Id: ID!, user2Id: ID!): Connections
+  sendMessage(fromUserId: ID!, toUserId: ID!, message: String!): Chat
+}
+
+type Query {
+  getUser(id: ID!): User
+  listUsers: [User]
+  listConnections(id: ID!): [Connections]
+  listChats(fromUserId: ID!, toUserId: ID!): [Chat]
+  getConnections(userId: ID!): [Connections]
+}

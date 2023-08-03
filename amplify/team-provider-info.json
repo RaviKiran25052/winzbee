@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-winzbee-dev-124502-authRole",
+      "UnauthRoleArn": "arn:aws:iam::131697420078:role/amplify-winzbee-dev-124502-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::131697420078:role/amplify-winzbee-dev-124502-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-winzbee-dev-124502-deployment",
+      "UnauthRoleName": "amplify-winzbee-dev-124502-unauthRole",
+      "StackName": "amplify-winzbee-dev-124502",
+      "StackId": "arn:aws:cloudformation:ap-south-1:131697420078:stack/amplify-winzbee-dev-124502/7ab45780-31cd-11ee-a2d0-02de60f8b7d0",
+      "AmplifyAppId": "dco0be1l0a4ej"
+    },
+    "categories": {
+      "api": {
+        "winzbee": {}
+      }
+    }
+  }
+}
